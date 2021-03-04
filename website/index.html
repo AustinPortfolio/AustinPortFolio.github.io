@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="main.css" />
+    <title> random banana facts </title>
+    <script>
+     function banner(){
+      var text = confirm("merely a distraction")
+      return text;
+     }
+
+     function answer(){
+      var radio = document.getElementsByName("trivia");
+      var selection = false;
+      var message = "";
+      for( var i = 0; i < radio.length; i++) {
+        if(radio[i].value == "yes" && radio[i].checked == true) {
+          selection = true;
+        }//end if statement
+      }//end for loop
+      if(selection == true) {
+        message = message + "<b><p style='color:green'>you looked it up, didnt you?</p></b>";
+      } else {
+        message = message + "<b><p style='color:red'>you know your on a computer? and easily could have looked it up?</p></b>";
+      }
+        document.getElementById("response").innerHTML = message;
+     } //end function answer
+    </script>
+    <style>
+      
+    </style>
+  </head>
+  <body id="background">
+    <a onclick="return banner()" href="https://www.youtube.com/watch?v=6XK4S8OQPuU">
+    <header id="banner">     banananer</header>
+    </a>
+    <nav>
+      <ul id="navmenu">
+        <li class="navitem"> <a href="index.html">home</a> </li>
+        <li class="navitem"> <a href="rickroll.html">rickroll</a> </li>
+        <li class="navitem"> <a href="images.html">images</a> </li>
+      </ul>
+    </nav>
+     <h1> <center> useless <span class="wrap-text">banana</span> facts </center> </h1>
+    <p class="khaki"> Welcome to my noob website about useless <u>banana</u> facts! Here you'll find facts about bananas (duh.), and maybe <i>a couple of video game references</i>! <b>I make no promises on the video game references</b>! I do however make promises for banana facts.</p>
+    <div class="rightside">
+    <p>banana images</p>
+    <img width="15%" src= https://images.stockfreeimages.com/12493/sfixl/124938855.jpg/>
+    <img width="15%" src= https://thumbs.dreamstime.com/z/rotten-banana-13133856.jpg/>
+    </div>
+<div class="leftside">
+ <div class="wrap-list">
+    <ol>
+      <li class="listitem">bananas can be yellow green and brown</li>
+      <li class="listitem">bananas are actually berries</li>
+      <li class="listitem">the bananas we eat are also sterile, which is pretty neat</li>
+    </ol>
+  </div>
+  <div class="wrap-trivia">
+    <h2>banana question</h2>
+    <p>which of these were europe's main banana export from 1870 to 1950?</p>
+    <form>
+      <div id="response"> </div>
+      <input type="radio" name="trivia" value="no"> cavendish banana
+      <input type="radio" name="trivia" value="no"> pisang raha banana
+      <input type="radio" name="trivia" value="yes"> gros michel banana
+      <input type="radio" name="trivia" value="no"> plantain banana
+      <input onclick="answer()" type="button" value="submit" id="button">
+    </form>
+  </div>
+</div>
+ <div class="clearfloat"></div> 
+    <hr />
+    <p> free rickroll </p>
+    <iframe width="400" height="400" src="https://www.youtube.com/watch?v=oHg5SJYRHA0">
+    </iframe>
+    <hr />
+    <center><a href=https://cprewritten.net/>my favorite website<a/>  </center>
+    <footer id="footer"> Austin Oh</footer>
+  </body>
+</html>
